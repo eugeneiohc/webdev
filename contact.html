@@ -8,63 +8,68 @@
 	<meta name = "author" content = "Eugene Choi">
 	<meta name = "keywords" content = "Prantl's Bakery">
 	<meta name = "descriptions" content = "Prantl's Bakery Website">
+	<meta name = "viewport" content = "width = device-width">
 	
-	<title>Prantl's Bakery</title>
+	<script type = "text/javascript" src = "js/jquery-3.3.1.min.js" ></script>
+	<script type = "text/javascript" src = "js/jquery-ui.js" ></script>
+	<script type = "text/javascript" src = "js/scripts.js" ></script>
+	
+	<title>Prantl's Bakery - Contact Us</title>
 </head>
 
-<body>
+<body style = "background-color: #FFF5DC">
 	<div class = "wrapper">
 		<div class = "header-wrapper">
-    		<header class = "site-header">
-        		<div class = "main-header">
-					<nav class = "navbar navbar-default">
-						<div class = "container">
-							<a href = "home.html"><img src = "images/logo.png" width = "8%"></a>
-							<a href = "about.html">About Us</a>
-							<a href = "storeinfo.html">Store Info</a>
-							<a href = "order_products.html">Our Products &amp; Order Online</a>
-							<a href = "celebrations.html">Celebrations</a>
-							<a href = "contact.html">Contact Us</a>
-						</div>
-					</nav>
+			<nav class = "navbar navbar-default">
+				<div class = "container">
+					<a class = "logo-link" href = "index.html"><img src = "images/logo.png" width = "100%"></a>
+					<a href = "about.html">About Us</a>
+					<a href = "storeinfo.html">Store Info</a>
+					<a href = "order_products.html">Data Visualization</a>
+					<a href = "celebrations.html">Celebrations</a>
+					<a href = "contact.html">Contact</a>
+					<a class = "social-link" href = "https://www.facebook.com/PrantlsBakery/"><img src = "images/facebook.png" width = "90%"></a>
+					<a class = "social-link" href = "https://twitter.com/prantlsbakery/"><img src = "images/twitter.png" width = "100%"></a>
+					<a class = "social-link" href = "https://www.instagram.com/prantls_bakery/"><img src = "images/instagram.png" width = "100%"></a>
+					<a class = "social-link" href = "https://www.tripadvisor.com/Restaurant_Review-g53449-d822736-Reviews-Prantl_s_Bakery-Pittsburgh_Pennsylvania.html"><img src = "images/tripadvisor.png" width = "96%"></a>
+					<a class = "social-link" href = "https://www.yelp.com/biz/prantls-bakery-pittsburgh"><img src = "images/yelp.png" width = "93%"></a>
+					<a class = "social-link" href = "mailto:infoneeded@prantlsbakery.com"><img src = "images/mail.png" width = "96%"></a>
 				</div>
-    		</header><!-- / .site-header -->
+			</nav>
+    	</div>
+    	
+    	<div class = "content">
+    		<h1>Contact Us</h1>
+			<form action="mailto:someone@example.com" method="post" enctype="text/plain" style = "width:75%" onsubmit = "return validate()">
+				<h3><label for = "name">Name:*</label><br></h3>
+				<input type = "text" id = "contact-label" name = "name" size = "30" maxlength = "250" required><br>
+				
+				<h3><label for = "zip">Zip Code:</label><br></h3>
+				<input type = "text" id = "zip" name = "zip" size = "6" maxlength = "5"><br>
+				
+				<h3><label for = "email">Email address:</label><br></h3>
+				<input type = "email" id = "contact-label" name = "mail" size = "30" maxlength = "100"><br>
+				
+				<h3><label for = "inquiry">Inquiry:</label><br></h3>
+				<textarea type = "text" id = "contact-label" rows = "10" cols = "50" maxlength = "300"></textarea>
+				
+				<h3>* Indicates that it is a required field</h3>
+				
+				<h3><label>Would you like to subscribe to Prantl's mailing list?:</label></h3>
+				<h3>
+				<input type = "checkbox" id = "emailupdates" name = "signup" value = "email">
+				<label for = "emailupdates">Yes, Please update me!</label>
+				</h3><br>
+				
+				<input type = "image" src = "images/submit.png" value = "Send" alt = "Submit">
+			</form>
     	</div>
     </div>
+    <div class = "footer">
+		<hr/>
+		&copy; Eugene Choi 2018<br/>
+		<a href = "mailto:echoi1@andrew.cmu.edu">Email Me</a>
+	</div>
 </body>
 
 </html>
-
-<!--
-<div class="header-wrapper">
-    <header class="site-header fixed">
-        <div class="main-header">
-            <nav class="navbar navbar-default">
-                <div class="container">
-                    <div class="navbar-header">
-                        <a class="logo" href="https://bonchon.com/"><img src="https://pc1t1altvxof3uw1gd8yvtow-wpengine.netdna-ssl.com/wp-content/themes/bonchon/images/logo@2x.png" alt="" class="img-responsive"></a>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-menu">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="primary-menu">
-                        <ul id="nav" class="nav navbar-nav clearfix"><li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://bonchon.com/our-story/">Our Story</a></li>
-<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="https://bonchon.com/locations-menus/">Locations &amp; Menus</a></li>
-<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="https://bonchon.com/franchising/">Franchising</a></li>
-<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://bonchon.com/whats-new/">What’s new</a></li>
-<li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="https://bonchon.com/contact/">Contact</a></li>
-</ul>                        <div class="header-social">
-                            <ul class="clearfix">
-                                <li><a href="https://www.facebook.com/BonchonChickenOfficial"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://twitter.com/bonchon"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="https://instagram.com/bonchonchicken/"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div><!-- /.navbar-collapse -->
-                </div>
-            </nav>
-        </div>
-    </header><!-- / .site-header -->
-</div>
